@@ -6,14 +6,34 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: jxxyrjian14-test
-email: your-email@domain.com
+title: Spaghetti-san Blog
+email: id@your-email.com
 description: > # this means to ignore newlines until "baseurl:"
-               # Description for the blog
+  All about Spaghetti-san Project
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://127.0.0.1" # the base hostname & protocol for your site
+twitter_username: axlyody
+github_username:  spaghetti-san
+facebook_username:  axlyody
 
+# Gems
+gems: 
+- jekyll-archives
+- jekyll-paginate
+
+# Config
+paginate: 5
+paginate_path: "page/:num"
 # Build settings
 markdown: kramdown
+
+# Archive
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
